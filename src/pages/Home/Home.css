@@ -1,9 +1,12 @@
-.banner {
+.banner-section {
   background-color: #f6f2ff;
+  padding: 10px 10px;
+}
+.banner {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .banner-img {
@@ -75,4 +78,44 @@
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
+}
+
+.create-btn {
+  display: none;
+}
+
+@media only screen and (max-width: 834px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+  }
+  .banner-left {
+    order: 1;
+  }
+  .banner-text {
+    order: 0;
+  }
+  .text-1 {
+    text-align: center;
+  }
+  .text-2 {
+    text-align: center;
+  }
+  .text-3 {
+    text-align: center;
+  }
+  .paragraph-text {
+    text-align: center;
+  }
+  .event-btn {
+    display: none;
+  }
+  .create-btn {
+    display: block;
+    margin: 40px 35px;
+  }
+  .banner-img {
+    margin-top: 10px;
+  }
 }
