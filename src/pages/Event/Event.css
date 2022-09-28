@@ -1,0 +1,20 @@
+.event-section {
+  background-color: #f6f2ff;
+  padding: 10px 10px;
+}
+.event {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.event-img {
+  width: 500px;
+  height: 500px;
+  left: calc(50% - 500px / 2 + 266px);
+  top: 184px;
+}
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
