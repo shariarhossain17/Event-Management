@@ -1,11 +1,28 @@
+.text-event {
+  color: #240d57;
+  line-height: 0;
+  font-size: 48px;
+}
+.text-color {
+  color: #240d57;
+  font-size: 18px;
+  font-weight: 700;
+}
+.host {
+  line-height: 0;
+  color: #828282;
+  margin-bottom: 75px;
+}
 .event-section {
   background-color: #f6f2ff;
   padding: 10px 10px;
+  min-height: 100vh;
 }
 .event {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-top: 95px;
 }
 .event-img {
   width: 500px;
@@ -16,5 +33,39 @@
 .date {
   display: flex;
   align-items: center;
-  justify-content: center;
+  line-height: 0;
+  margin-top: 10px;
+}
+
+.icon-bg {
+  background-color: #fff;
+  padding: 4px 4px;
+  margin-right: 10px;
+}
+.calender-icon {
+  font-size: 30px;
+  color: #8456ec;
+}
+
+.start {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 834px) {
+  .event {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .event-left {
+    align-items: flex-start;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .event-img {
+    width: 375px;
+    height: 375px;
+    left: calc(50% - 375px / 2);
+    top: 0px;
+  }
 }
