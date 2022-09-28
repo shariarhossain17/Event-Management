@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import ".././CreateEvent/CreateEvent.css";
 import { createEvent } from "./CreateSlice";
 const CreateEvent = () => {
@@ -11,8 +12,11 @@ const CreateEvent = () => {
     watch,
     formState: { errors },
   } = useForm();
+
+  const navigate = useNavigate()
   const onSubmit = (data) => {
     dispatch(createEvent(data));
+    navigate('/event')
   };
   return (
     <section className="create-section">
