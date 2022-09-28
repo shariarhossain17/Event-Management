@@ -1,11 +1,30 @@
-import React from 'react';
+import React from "react";
+import bannerImg from "../../assests/bannerimg.png";
+import "../Home/Home.css";
 
 const Home = () => {
-    return (
+  return (
+    <section>
+      <div className="banner">
         <div>
-            <h1>Hello</h1>
+          <img className="banner-img" src={bannerImg} alt="bannerImg" />
         </div>
-    );
+        <div className="banner-text">
+          <div className="text">
+            <h1 className="text-1">Imagine if</h1>
+            <h1 className="text-2">Snapchat</h1>
+            <h1 className="text-3">had events.</h1>
+            <p className="paragraph-text">
+            Easily host and share events with your friends across any social media.
+          </p>
+          </div>
+           <div className="btn-section">
+           <button className="event-btn">🎉 Create my event</button>
+           </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Home;
