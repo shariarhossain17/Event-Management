@@ -7,7 +7,7 @@ const Home = () => {
     <section className="banner-section">
       <div className="banner">
         <div className="banner-left">
-          <div>
+          <div className="banner-img1">
             <img className="banner-img" src={bannerImg} alt="bannerImg" />
           </div>
 
