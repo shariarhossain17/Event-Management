@@ -1,0 +1,60 @@
+.create-section {
+  background-color: #f6f2ff;
+  padding: 10px 10px;
+  height: 95vh;
+}
+
+.create {
+  width: 50%;
+  background-color: #ede5ff;
+  box-shadow: 2px 6px 6px 1px rgb(0 0 0 / 24%);
+  margin: auto auto;
+  padding: 30px 30px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.text-event {
+  color: #240d57;
+  font-size: 40px;
+}
+
+.create input {
+  width: 70%;
+  margin: 0 auto;
+  padding: 11px 15px;
+  outline: none;
+  font-size: 16px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.error {
+  color: red;
+  margin-top: 10px 0;
+}
+
+.next-btn {
+  width: 40%;
+  height: 55px;
+  left: calc(50% - 320px / 2 + 436px);
+  top: 622px;
+
+  background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+  border-radius: 10px;
+  margin-left: auto;
+  color: #fff;
+  border: none;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 834px) {
+  .create {
+    width: 70%;
+  }
+}

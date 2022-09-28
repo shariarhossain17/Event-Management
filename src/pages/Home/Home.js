@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import bannerImg from "../../assests/bannerimg.png";
 import "../Home/Home.css";
 
 const Home = () => {
+    const navigate = useNavigate()
   return (
     <section className="banner-section">
       <div className="banner">
@@ -12,7 +14,7 @@ const Home = () => {
           </div>
 
           <div className="btn-create">
-            <button className="create-btn event-btn">🎉 Create my event</button>
+            <button onClick={() => navigate('/create')}  className="create-btn event-btn">🎉 Create my event</button>
           </div>
         </div>
         <div className="banner-text">
@@ -26,7 +28,7 @@ const Home = () => {
             </p>
           </div>
           <div className="btn-section">
-            <button className="event-btn">🎉 Create my event</button>
+            <button onClick={() => navigate('/create')} className="event-btn">🎉 Create my event</button>
           </div>
         </div>
       </div>
